@@ -20,6 +20,13 @@ textarea{
     border-radius: 55px;
     padding-left:1rem;
 }
+.wide{
+  width:60% !important
+}
+.float-right{
+  float: right;
+  font-size: 10px;
+}
 .tool{
   text-align: center;
   font-size: 0.8rem;
