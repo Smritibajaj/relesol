@@ -91,6 +91,7 @@ listitem.classList.add('clearfix');
 listitem.classList.add('bg-white');
 listitem.classList.add('border');
 listitem.classList.add('mb-2');
+listitem.classList.add('wide');
 div1.classList.add('message-data');
 div1.classList.add('align-right');
 span1.classList.add('message-data-time');
@@ -104,7 +105,7 @@ div2.classList.add('other-message');
 //div2.classList.add('p-1');
 span4.classList.add('time-class');
 span4.classList.add('p-2');
-
+span4.classList.add('float-right')
 }
 function debounce(func, wait = 20, immediate = true) {
 var timeout;
@@ -120,7 +121,7 @@ timeout = null;
     if (callNow) func.apply(context, args);
   };
 }
-const textSlider = document.querySelectorAll('.clearfix');
+const textSlider = document.querySelectorAll('.tool');
 //console.log(textSlider);
 function checkSlide(e){
     //console.count(e);
@@ -159,7 +160,7 @@ var listitem1 = document.createElement('div');
 //console.log(listitem);
 list.appendChild(listitem1);
 listitem1.innerHTML = chats[i].msgtime;
-listitem1.classList.add('tooltip'); 
+listitem1.classList.add('tool'); 
 }
 for(let t=0 ; t < chats.length ; t++){
   
@@ -174,3 +175,4 @@ for(let t=0 ; t < chats.length ; t++){
   //return dates;
 }
 //console.log(min_date(dates));
+v
