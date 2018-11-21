@@ -120,7 +120,7 @@ timeout = null;
     if (callNow) func.apply(context, args);
   };
 }
-const textSlider = document.querySelectorAll('.clearfix');
+const textSlider = document.querySelectorAll('.tool');
 //console.log(textSlider);
 function checkSlide(e){
     //console.count(e);
@@ -159,7 +159,7 @@ var listitem1 = document.createElement('div');
 //console.log(listitem);
 list.appendChild(listitem1);
 listitem1.innerHTML = chats[i].msgtime;
-listitem1.classList.add('tooltip'); 
+listitem1.classList.add('tool'); 
 }
 for(let t=0 ; t < chats.length ; t++){
   
