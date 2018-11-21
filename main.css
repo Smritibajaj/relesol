@@ -20,10 +20,22 @@ textarea{
     border-radius: 55px;
     padding-left:1rem;
 }
-.tooltip{
+.wide{
+  width:60% !important
+}
+.float-right{
+  float: right;
+  font-size: 10px;
+}
+.tool{
   text-align: center;
   font-size: 0.8rem;
   color:white;
+  background: black;
+  width: 10rem;
+  margin: 0.5rem auto;
+  border-radius: 12px;
+}
 }
 .time-class{
     font-size: 10px;
