@@ -1,7 +1,7 @@
 var chats =[
   { contactno: "+91 9953438126",
    contactname: "Simmy",
-   msgtime: 'August 30, 2018 23:15:30',
+   msgtime: 'August 17, 2018 23:15:30',
    message:"Hi Mam"
   },
    { contactno: "+91 9953438126",
@@ -163,14 +163,20 @@ listitem1.innerHTML = chats[i].msgtime;
 listitem1.classList.add('tool'); 
 }
 for(let t=0 ; t < chats.length ; t++){
-  
   let i =  min_date(dates);
-  //console.log(i);
+  if(dates.length>1)
+  {
+
   dateApp(i);
   createChat(i);
-  
   debounce(checkSlide);
-  dates.splice(i-1,1);
+
+  }
+  if (i==0){
+  dates.splice(0,1);
+  }
+  else{
+  dates.splice(i-1,1);}
   //alert(dates);
   //return dates;
 }

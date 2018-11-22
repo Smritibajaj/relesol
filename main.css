@@ -27,6 +27,10 @@ textarea{
   float: right;
   font-size: 10px;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
 .tool{
   text-align: center;
   font-size: 0.8rem;
