@@ -162,6 +162,10 @@ list.appendChild(listitem1);
 listitem1.innerHTML = chats[i].msgtime;
 listitem1.classList.add('tool'); 
 }
+
+function autoScroll(){
+  window.scrollTo(0,document.body.scrollHeight);
+}
 for(let t=0 ; t < chats.length ; t++){
   let i =  min_date(dates);
   if(dates.length>1)
@@ -169,6 +173,7 @@ for(let t=0 ; t < chats.length ; t++){
 
   dateApp(i);
   createChat(i);
+  autoScroll();
   debounce(checkSlide);
 
   }
